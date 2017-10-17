@@ -41,9 +41,9 @@ public class MainFrame extends JFrame {
         btnLogin.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (IDtf.getText().equals("A")){
-                    if((new String(Passtf.getPassword())).equals("1")){
-                        LoginFrame lgf = new LoginFrame();
+                if (IDtf.getText().equals("h304")){
+                    if((new String(Passtf.getPassword())).equals("23323456")){
+                        LoginFrame lgf = new LoginFrame(MainFrame.this);
                         lgf.setVisible(true);
                         MainFrame.this.setVisible(false);
                     }else{JOptionPane.showMessageDialog(null,"Password Error" );
